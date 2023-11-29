@@ -24,9 +24,9 @@ module.exports = () => {
       title: "Text Editor",
     })
       
-    //Custom service worker 
+      ],
 
-    ],
+      //Custom service worke
 
     module: {
       rules: [
