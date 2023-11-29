@@ -31,6 +31,8 @@ module.exports = () => {
 
     module: {
       rules: [
+        test,
+        use,
         
       ],
     },
