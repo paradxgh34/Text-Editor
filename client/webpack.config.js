@@ -24,6 +24,8 @@ module.exports = () => {
       title: "Text Editor",
     })
       
+    //Custom service worker 
+
     ],
 
     module: {
