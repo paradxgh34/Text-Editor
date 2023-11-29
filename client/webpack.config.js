@@ -41,3 +41,11 @@ module.exports = () => {
 
 
 // Babel module load load
+"@babel/plugin-proposal-object-rest-spread",
+"@babel/transform-runtime",
+],
+
+
+
+
+// TODO: Add CSS loaders and babel to webpack.
