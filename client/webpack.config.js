@@ -20,8 +20,8 @@ module.exports = () => {
     plugins: [
     // Webpack plugin 
     HtmlWebpackPlugi({
-      template:,
-      title:,
+      template: "index.html",
+      title: "Text Editor",
     })
       
     ],
