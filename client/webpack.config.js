@@ -19,6 +19,10 @@ module.exports = () => {
     },
     plugins: [
     // Webpack plugin 
+    HtmlWebpackPlugi({
+      template:,
+      title:,
+    })
       
     ],
 
