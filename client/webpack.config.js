@@ -17,9 +17,13 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [
+
+
     // Webpack plugin 
     // TODO: Add and configure workbox plugins for a service worker and manifest file.
+
+    plugins: [
+
     HtmlWebpackPlugi({
       template: "./index.html",
       title: "Text Editor",
@@ -31,8 +35,8 @@ module.exports = () => {
 
     module: {
       rules: [
-        test,
-        use,
+        test /\.m?js$/,
+        use /node_modules/,
         
       ],
     },
@@ -40,7 +44,11 @@ module.exports = () => {
 };
 
 //// TODO: Add CSS loaders and babel to webpack.
-
+rules: [
+  {
+    test: /\.css$/i,
+    use: ["style-loader", "css-loader"],
+  },
 
 // Babel module load load
 "@babel/plugin-proposal-object-rest-spread",
