@@ -60,37 +60,31 @@ module.exports = () => {
         ],
         ////////////////////////////////////
 
-    HtmlWebpackPlugi({
-      template: "./index.html",
-      title: "Text Editor",
-    })
-      
-      ],
-
-      //Custom service worker
-
+    // CSS loaders and babel to webpack
     module: {
+      // CSS loaders
       rules: [
-        test /\.m?js$/,
-        use /node_modules/,
-        
+        {
+          test: /\.css$/i,
+          use: ["style-loader", "css-loader"],
+        },
+        {
+          test: /\.m?js$/,
+          exclude: /node_modules/,
+          // Babel-loader -> in order to use ES6
+// TODO: Add CSS loaders and babel to webpack.
+                "@babel/plugin-proposal-object-rest-spread",
+                "@babel/transform-runtime",
+              ],
+            },
+          },
+        },
       ],
     },
   };
 };
 
-//// TODO: Add CSS loaders and babel to webpack.
-rules: [
-  {
-    test: /\.css$/i,
-    use: ["style-loader", "css-loader"],
-  },
-
-// Babel module load load
-"@babel/plugin-proposal-object-rest-spread",
-"@babel/transform-runtime",
-],
-
+////////////////////////
 
 
 
