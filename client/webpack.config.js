@@ -20,8 +20,20 @@ module.exports = () => {
 //////////
     // Webpack plugin 
     // TODO: Add and configure workbox plugins for a service worker and manifest file.
-
     plugins: [
+      // Webpack plugin that generates our html file and injects our bundles
+      new HtmlWebpackPlugin({
+        template: "./index.html",
+        title: "Text Editor",
+      }),
+
+      // Injects our custom service worker
+      new InjectManifest({
+        swSrc: "./src-sw.js",
+        swDest: "src-sw.js",
+      }),
+
+      ////////////////////
 
     HtmlWebpackPlugi({
       template: "./index.html",
