@@ -62,7 +62,11 @@ module.exports = () => {
           test: /\.m?js$/,
           exclude: /node_modules/,
           // Babel-loader -> in order to use ES6
-// TODO: Add CSS loaders and babel to webpack.
+          use: {
+            loader: "babel-loader",
+            options: {
+              presets: ["@babel/preset-env"],
+              plugins: [
                 "@babel/plugin-proposal-object-rest-spread",
                 "@babel/transform-runtime",
               ],
