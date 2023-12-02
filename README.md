@@ -10,4 +10,4 @@ Contribution Guidelines: Github / MDN web documents
 
 Testing Instructions: N/A
 
-Link to URL: https://git.heroku.com/secret-savannah-85248.git
+Link to URL: https://infinite-plateau-56682-7aaa07c55471.herokuapp.com/
